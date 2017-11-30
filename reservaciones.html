@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inicio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/reservaciones.css">
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+<div id="navBar" class="navBar">
+		<a href="reservaciones.html" class="celda botonLink">Inicio</a>
+		<a href="reservaciones.html" class="celda botonLink">Quiénes somos</a>
+		<a href="reservaciones.html" class="celda botonLink">Nuestro menú</a>
+		<a href="reservaciones.html" class="celda botonLink">Reservaciones</a>
+		<a href="reservaciones.html" class="celda botonLink">Contacto</a>
+</div> 
+
+	
+<div class="elementosEvento">
+			<div>
+				<div class="celda">
+			    	<label for="name">Tipo de evento</label>
+					<select id='evento' class="selectpicker">
+						<option value="1">Bautizo</option>   
+						<option value="2">Boda</option>   
+						<option value="3">Graduación</option>  
+						<option value="4">Reunión de negocios</option>   			 
+						<option value="5">Reunión familiar</option>   
+						<option value="6">XV años</option> 
+					</select>
+				</div>
+
+				<div class="celda">
+					<label for="name">Evento guardado</label>
+					<select id='eventoGuardado' class="selectpicker">
+						<option value="">No hay elementos</option>
+					</select>
+				</div>
+
+				<div class="celda">
+						<label for="name">Platillos</label>
+						<select id='platillo' class="selectpicker">
+						<option value="1">Filete Mignon con salsa Bernesa</option>
+						<option value="2">Filete Stroganoff</option>
+						<option value="3">Pasta con Ragu Confit de Pato</option>
+						<option value="4">Pato al Oporto</option>	
+						<option value="5">Pollo al pistache</option>	
+						<option value="6">Rataotuille</option>
+						</select>			</div>
+
+						
+			</div>
+
+			
+
+						<div class="celda">
+							<label for"name">Fecha</label>
+							<input type="date" name="fecha" id="fecha" required="">
+						</div>	
+						
+					
+	
+	<button type="button" id="reservar" class="botonVerde celda">Reservar</button>
+</div>
+
+
+<div id="contenedor" class="contenedor">
+	
+
+	<div class="dragAndDrop">
+
+		<div class="dragBar" id="dragBar" ondragstart="dragStart(event)" drag="drag(event)">
+
+			<div>
+				<img src="imagenes/mesa.png" class="mesa tooltip" id="mesa1">
+			</div>
+
+			<img src="imagenes/mesa.png" class="mesa tooltip" id="mesa1">
+			<img src="imagenes/mesa.png" class="mesa" id="mesa2">
+			<img src="imagenes/mesa.png" class="mesa" id="mesa3">
+			<img src="imagenes/banda.png" class="banda" id="banda">
+			<img src="imagenes/pista.gif" class="pista" id="pista">
+			<img src="imagenes/bocina.png" class="bocina" id="bocina1">
+			<img src="imagenes/bocina.png" class="bocina" id="bocina2">
+			<img src="imagenes/mesero.png" class="mesero" id="mesero1">
+			<img src="imagenes/mesero.png" class="mesero" id="mesero2">
+
+		</div>
+
+		
+		<div class="dropSpace" id="dropSpace" ondragover="permitirDrop(event)" ondrop="drop(event)">
+
+			<table >
+				<tr>
+					<td id = "m11" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+					<td id = "m12" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+					<td id = "m13" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+				</tr>
+
+				<tr>
+					<td id = m21" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+					<td id = "m22" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+					<td id = "m23"class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+				</tr>
+
+				<tr>
+					<td id = "m31" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+					<td id = "m32" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+					<td id = "m33" class="cell" ondragover="permitirDrop(event)" ondrop="drop(event)" ondragstart="dragStart(event)" drag="drag(event)"></td>
+				</tr>
+
+			</table>
+
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="JS/jquery.min.js"></script>
+<script type="text/javascript" src="JS/reservaciones.js"></script>
+
+</body>
+</html>

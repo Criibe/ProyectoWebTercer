@@ -1,0 +1,87 @@
+body{
+	margin-top: 3%;
+	background-image: url("../imagenes/bg.png"); 
+	background-repeat: no-repeat;
+	background-size: 100% 720px;
+	vertical-align: middle;
+}
+
+label{
+	font-size: 50px;
+	color: white;
+}
+
+div label{
+	font-size: 40px;
+	color: #5ac8fa;
+}
+
+.boton{
+  height: 45px;
+  padding-bottom: 20px 50px;
+  color: white;
+  border-radius: 2px;
+  font-size: 14px;
+  border: none;
+  background-color: #2ECC71;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+
+.boton:hover{
+  height: 45px;
+  padding-bottom: 20px 50px;
+  color: white;
+  border-radius: 2px;
+  font-size: 14px;
+  border: none;
+  background-color: #27AE60;
+}
+
+.bounce{
+	  animation-duration: 0.5s;
+    animation-name: bounce;
+    transform-origin: center bottom;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.pulse{
+	animation-duration: 0.5s;
+  	animation-fill-mode: both;
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

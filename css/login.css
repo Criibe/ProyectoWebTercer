@@ -1,0 +1,114 @@
+body{
+	margin: 0 auto;
+	background-image: url("../imagenes/bg.png"); 
+	background-repeat: no-repeat;
+	background-size: 100% 720px;
+}
+
+*{
+	text-decoration: none;
+	font-size: 18px;
+}
+
+label{
+	color: white;
+}
+
+a{
+	color: #5ac8fa;
+	font-weight: bold;
+}
+
+input:invalid {
+border: 3px solid red;
+}
+
+input:required:valid {
+border: 3px solid green;
+}
+
+
+
+.contenedor{
+	width: 600px;
+	height: 400px;
+	text-align: center;
+	background-color: rgba(52, 73, 94, 0.4);
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+.contenedor img{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+input[type="text"], input[type="password"]{
+	height: 45px;
+	width: 300px;
+	font-size: 15px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 30px;
+}
+
+
+.botonLogin{
+	height: 45px;
+	padding-bottom: 20px 50px;
+	color: white;
+	border-radius: 2px;
+	font-size: 14px;
+	border: none;
+	background-color: #2ECC71;
+}
+
+.botonLogin:hover{
+	height: 45px;
+	padding-bottom: 20px 50px;
+	color: white;
+	border-radius: 2px;
+	font-size: 14px;
+	border: none;
+	background-color: #27AE60;
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: ;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+

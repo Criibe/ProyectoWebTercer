@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Registrarse</title>
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+
+	<div id="">
+		<label id="registrarse">Registrarse</label>		
+	</div>
+
+	<div class="contenedor bounceIn">
+		<img src="imagenes/user3.png">		
+		<form>
+			<div class="entradaFormulario">
+				<input type="text" name="nombre" placeholder="Ingresa tu nombre" id="nombre" required>
+			</div>
+
+			<div class="entradaFormulario">
+				<input type="text" name="usuario" placeholder="Ingresa tu correo" id="correo" required pattern="^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" >
+
+
+
+			</div>
+
+			<div class="entradaFormulario">
+				<input type="password" name="contrasenia" placeholder="contrasenia" id="contrasenia" required pattern="^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+$">
+			</div>
+
+			<input type="submit" id="botonRegistrarse" name="enviar" value="Registrarse" class="botonLogin" >
+
+		</form>
+	</div>
+
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/registro.js"></script>
+</body>
+</html>

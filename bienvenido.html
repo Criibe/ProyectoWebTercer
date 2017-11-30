@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido</title>
+	<link rel="stylesheet" type="text/css" href="css/bienvenido.css">
+</head>
+<body>
+
+	<label class="bounce">¡BIENVENIDO!</label>
+
+	<div>
+		<label class="pulse">Ahora ya puedes hacer reservaciones</label>
+	</div>
+
+	<button class="boton" id="boton">Continuar</button>
+
+<script type="text/javascript" src="JS/jquery.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+
+	$(document).ready(
+
+		function f (){
+			 
+			 $('#boton').click(function d(event){
+	            event.preventDefault(); //will stop the link href to call the blog page
+
+	            setTimeout(function () {
+	               window.location.href = "index.html"; //will redirect to your blog page (an ex: blog.html)
+	            }, 100); 
+			 });
+
+		});
+
+</script>
+
+
+
+
+
+</body>
+</html>
