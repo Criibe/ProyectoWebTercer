@@ -29,7 +29,6 @@ select{
  	border: 2px solid #fff;
  	width: 80%;
  	border: 2px solid green;
-
  }
 
 
@@ -49,21 +48,6 @@ select{
  	width: 80%;
  }
 
- input:invalid {
-border: 2px solid red;
-}
-
-input:required:valid {
-border: 2px solid green;
-}
-
-input[type="text"]{
-	height: 20px;
-	width: 200px;
-	font-size: 12px;
-	margin-bottom: 15px;
-	background-color: #fff;
-}
 
 label{
 	color: white;
@@ -153,8 +137,9 @@ label{
 
 .dragBar{
 	width: 12%;
+	margin-left: 12%;
 	background-color: blue;
-	background-color: rgba(52, 73, 94, 0.9);
+	background-color: rgba(52, 73, 94, 0.5);
 	overflow-y: scroll; 
 	height:400px;
 
@@ -164,8 +149,6 @@ label{
 }
 
 .dropSpace{
-	margin: auto;
-	padding: auto;
 	width: 800px;
 	height:400px;
 

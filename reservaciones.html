@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/reservaciones.css">
  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -51,10 +51,10 @@
 						<option value="4">Pato al Oporto</option>	
 						<option value="5">Pollo al pistache</option>	
 						<option value="6">Rataotuille</option>
-						</select>			</div>
-
-						
-			</div>
+						</select>			
+				</div>
+			    
+			    </div>
 
 			
 
@@ -66,6 +66,8 @@
 					
 	
 	<button type="button" id="reservar" class="botonVerde celda">Reservar</button>
+	<button type="button" data-toggle="modal" data-target="#myModal">Modal </button>
+
 </div>
 
 
@@ -121,8 +123,62 @@
 
 </div>
 
-<script type="text/javascript" src="JS/jquery.min.js"></script>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mover a</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      	<form>
+      	  <div class="form-group">
+      	  	<label class="form-group text-primary">Platillo</label>
+						<select id='platillo' class="selectpicker">
+						<option value="1">Filete Mignon con salsa Bernesa</option>
+						<option value="2">Filete Stroganoff</option>
+						<option value="3">Pasta con Ragu Confit de Pato</option>
+						<option value="4">Pato al Oporto</option>	
+						<option value="5">Pollo al pistache</option>	
+						<option value="6">Rataotuille</option>
+						</select>			
+
+      	</div>
+
+		  <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado uno" id="m1i1"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado dos" id="m12i"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado tres" id="m1i3"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado cuatro" id="m1i4"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado cinco" id="m1i5"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado seis" id="m1i6"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado siete" id="m1i7"></div>
+	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado ocho" id="m1i8"></div>
+		</form>
+	  </div>
+
+
+
+		
+		
+       
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="jquery/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="JS/reservaciones.js"></script>
+    
 
 </body>
 </html>

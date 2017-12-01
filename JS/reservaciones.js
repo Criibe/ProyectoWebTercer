@@ -76,11 +76,6 @@ function dragStart(event){
 function drop(event){
 
 	document.getElementById(id).classList.remove("gelatina");
-
-    /*console.log("event.target " + event.dataTransfer.getData("text"));
-    console.log("event.target2 " + event.target.id);*/
-
-    //if(event.target.id == "dropSpace")
     event.target.append(document.getElementById(id));
 
 	var offset = event.dataTransfer.getData("text/plain").split(",");
