@@ -51,6 +51,10 @@ label{
 	color: white;
 }
 
+.fondoVerdeTransparente{
+	background-color: rgba(52, 73, 94, 0.4);
+}
+
  #divBotonUnico{
  	width: 100%;
  }

@@ -24,7 +24,7 @@
 <div class="elementosEvento">
 			<div>
 				<div class="celda">
-			    	<label for="name">Tipo de evento</label>
+			    	<label for="name" >Tipo de evento</label>
 					<select id='evento' class="seleccionar">
 						<option value="1">Bautizo</option>   
 						<option value="2">Boda</option>   
@@ -38,7 +38,6 @@
 				<div class="celda">
 					<label for="name">Evento guardado</label>
 					<select id='eventoGuardado' class="seleccionar" >
-						<option value="">No hay elementos</option>
 					</select>
 				</div>
 			    
@@ -47,7 +46,7 @@
 					<input type="date" name="fecha" id="fecha" class="seleccionar" requiered>
 				</div>	
 
-				<button type="button" id="reservar" class="botonVerde celda">Reservar</button>
+				<button type="submit" id="reservar" class="botonVerde celda">Reservar</button>
 
 			    </div>
 
@@ -109,8 +108,8 @@
 
 
 <!-- Modal Mesa Uno -->
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade fondoVerdeTransparente" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog fond" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Mesa uno</h5>
@@ -139,6 +138,9 @@
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado seis" id="m1i6" requiered></div>
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado siete" id="m1i7" requiered></div>
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado ocho" id="m1i8" requiered></div>
+
+	      <button type="button" class="botonVerde" data-dismiss="modal" aria-label="Close">Aceptar</button>
+
 		</form>
 	  </div>
       </div>
@@ -177,6 +179,9 @@
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado seis" id="m2i6" requiered></div>
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado siete" id="m2i7" requiered></div>
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado ocho" id="m2i8" requiered></div>
+
+	      <button type="button" class="botonVerde" data-dismiss="modal" aria-label="Close">Aceptar</button>
+
 		</form>
 	  </div>
       </div>
@@ -215,6 +220,9 @@
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado seis" id="m3i6" requiered></div>
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado siete" id="m3i7" requiered></div>
 	      <div class="form-group"><input type="text" name="" class="form-control" placeholder="Invitado ocho" id="m3i8" requiered></div>
+	 
+        	<button type="button" class="botonVerde" data-dismiss="modal" aria-label="Close">Aceptar</button>
+
 		</form>
 	  </div>
       </div>
